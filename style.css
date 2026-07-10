@@ -132,8 +132,12 @@ h1 {
 
 h2 {
   font-size: 35px;
-  margin-bottom: 56px;
+  margin-bottom: 16px;
   text-align: center;
+}
+
+.speaker-sec-title {
+  margin-bottom: 56px;
 }
 
 .speakers-grid {
@@ -156,10 +160,67 @@ h2 {
 
 .card-content-wrap {
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 12px;
 }
 .card-label {
   font-size: 12px;
   color: var(--blue);
   font-weight: 600;
   text-transform: uppercase;
+}
+
+/* pricing section  */
+.pricing-sec-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 56px;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.pricing-card {
+  border-radius: 12px;
+  padding: 32px;
+  overflow: hidden;
+  border: 1px solid var(--stroke-color);
+}
+
+.pricing-type {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: var(--body-txt);
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+.price {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.users {
+  color: var(--body-txt);
+  font-size: 13px;
+}
+
+.price-card-list {
+  padding-top: 20px;
+  border-top: 1px solid var(--stroke-color);
+  margin: 20px 0;
+}
+.price-card-list li {
+  /* display: block; */
+  margin-left: 1em;
+
+  &::marker {
+    color: var(--blue);
+  }
 }
