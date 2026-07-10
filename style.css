@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  /* colors  */
+  --blue: #2563eb;
+  --white: #ffffff;
+  --black: #000102;
+  --body-txt: #575757;
+  --border: rgba(229, 231, 235, 1);
+  --bg-neviblue: #0d1b2a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
