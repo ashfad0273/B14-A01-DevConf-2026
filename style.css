@@ -7,7 +7,7 @@
   --white: #ffffff;
   --black: #000102;
   --body-txt: #575757;
-  --border: rgba(229, 231, 235, 1);
+  --stroke-color: hsl(220, 13%, 91%);
   --bg-neviblue: #0d1b2a;
 
   /* transition  */
@@ -37,6 +37,8 @@ section {
 .container {
   max-width: 1320px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 button {
@@ -85,10 +87,79 @@ header .container {
 }
 
 /* hero section  */
+.hero {
+  height: 700px;
+  background-image:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0) 70%),
+    linear-gradient(
+      212.62deg,
+      rgba(0, 0, 0, 0) 42.904%,
+      rgba(0, 0, 0, 0.88) 82.175%
+    ),
+    url("./assets/banner.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.hero-content {
+  text-align: center;
+  max-width: 950px;
+  color: var(--white);
+}
 h1 {
   font-size: 80px;
+  margin-bottom: 24px;
 }
 
 .hero-body {
   font-size: 22px;
+  opacity: 0.9;
+}
+
+.btn-hero {
+  font-size: 18px;
+  padding: 12px 30px;
+}
+
+/* speakers section */
+
+h2 {
+  font-size: 35px;
+  margin-bottom: 56px;
+  text-align: center;
+}
+
+.speakers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.speaker-card {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--stroke-color);
+}
+
+.speaker-img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+}
+
+.card-content-wrap {
+  padding: 24px;
+}
+.card-label {
+  font-size: 12px;
+  color: var(--blue);
+  font-weight: 600;
+  text-transform: uppercase;
 }
