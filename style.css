@@ -481,10 +481,6 @@ footer {
   align-items: center;
 }
 
-.footer-logo {
-  filter: invert(1);
-}
-
 .social-links {
   display: flex;
   align-items: center;
